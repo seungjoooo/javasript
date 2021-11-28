@@ -14,7 +14,45 @@
         .personality ol > li:hover {
             color : orangered
         }
+        .container>h1:active{
+            background-color: yellow;
+        }
+        #nav {
+            overflow: hidden;
+
+        }
+        #nav .outer-menu{
+            list-style: none;
+            float : left;
+            /*margin : 0 15px; */
+            border: 1px dashed black;
+            padding : 15px;
+
+
+        }
+        #nav .outer-menu:nth-child(2n-1){
+            background-color: cornflowerblue;
+        }
+        #nav .outer-menu:nth-child(2n){
+            background-color: darkblue;
+        }
+        #nav li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        #nav li:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+        #nav .outer-menu:nth-child(1){
+            opacity: 1;
+        }
+        #nav .outer-menu:nth-child(2){
+            opacity: 0.6;
+        }
+        #nav .outer-menu:nth-child(3){
+            opacity: 0.2;
+        }
         
+
     </style>
 </head>
 <body>
@@ -35,7 +73,7 @@
         우선 제가 가장 좋아하는 영어 공부를 하고 있습니다. 영어를 할 때 항상 긴장되지만 항상 미래를 준비하는 건실한 기분이 들거든요 ㅎㅎ
         </p>
     
-        <span>내 블로그 : </span><a href="https://blog.naver.com/pool9604">내블로그</a>
+        <span>내 블로그 : <a href="https://blog.naver.com/pool9604">내블로그</a> </span>
 
     </div>
 
@@ -133,6 +171,14 @@
             
         </table>
        
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li class="outer-menu">html</li>
+            <li class="outer-menu">css3</li>
+            <li class="outer-menu">Javascript</li>
+        </ul>
     </div>
 
 
