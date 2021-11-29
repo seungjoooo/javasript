@@ -51,8 +51,27 @@
         #nav .outer-menu:nth-child(3){
             opacity: 0.2;
         }
-        
-
+        .box{
+            width:100px;
+            height: 100px;
+            position:absolute;
+        }
+        .box:nth-child(1){
+            background-color: red;
+            top:500px;
+            left:10px;
+            
+        }
+        .box:nth-child(2){
+            background-color: yellow;
+            top:500px;
+            left:30px
+        }
+        .box:nth-child(3){
+            background-color:  blue;
+            top:500px;
+            left:60px;
+        }
     </style>
 </head>
 <body>
@@ -181,5 +200,11 @@
         </ul>
     </div>
 
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
 
 </body>
