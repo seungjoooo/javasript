@@ -2,33 +2,26 @@
 <html>
     <head>
         <style>
-            .box{
+            #container{
+                overflow: hidden;
+            }
+            #container > .box{
+                float: left;
                 width: 100px;
                 height: 100px;
-                position: absolute;
-                
-              
-            }
-            .box:nth-child(1){
                 background-color: red;
-                left:10px;
-                top:10px;
+                margin: 10px;
             }
-            .box:nth-child(2){
-                background-color: yellow;
-                left:50px;
-                top:50px;
-            }
-            .box:nth-child(3){
-                background-color:  blue;
-                left:90px;
-                top:90px;
-            }
+
+            
         </style>
     </head>
     <body>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div id="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
     </body>
 </html>
