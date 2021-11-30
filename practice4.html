@@ -2,19 +2,14 @@
 <html>
     <head>
         <script>
-            var coin =prompt("coin 입력");
-            function check(coin){
-                if(coin==500){
-                    alert('correct');
-
-                }else if(coin < 500 && coin >=0){
-                    alert('we need more so insert more coins');
-                }else if(coin <0){
-                    alert('there is something wrong');
-                }
+            var lang =prompt("lang 입력");
+            var i;
+            var products=['my name is', ' sj',' my age is',24,function(lang){alert(' i can speak'+ lang)} ];
+            for(i=0;i<products.length-1;i++)
+            {
+                document.write(products[i]);
             }
-            check(coin);
-            
+          
         </script>
     </head>
     <body>
