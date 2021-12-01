@@ -3,13 +3,9 @@
     <head>
         <script>
             window.onload=function(){
-                var headers = document.querySelectorAll('h1');
-                for(var i=0;i<headers.length;i++)
-                {
-                    var header=headers[i];
-                    header.style.background='red';
-                    header.innerHTML='hello';
-                }
+                var string = '<h1>hello</h1>';
+                //document.body.textContent=string;
+                document.body.innerHTML=string;
                 
             };
         </script>
