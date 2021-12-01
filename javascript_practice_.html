@@ -3,9 +3,14 @@
     <head>
         <script>
             window.onload=function(){
-                var header = document.querySelector('h1');
-                header.style.background='red';
-                header.innerHTML='hello';
+                var headers = document.querySelectorAll('h1');
+                for(var i=0;i<headers.length;i++)
+                {
+                    var header=headers[i];
+                    header.style.background='red';
+                    header.innerHTML='hello';
+                }
+                
             };
         </script>
 
