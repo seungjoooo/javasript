@@ -9,9 +9,9 @@
                 z-index: 1;
             }
             .box{
-                background: blue;
+                /*background: blue;
                 position:absolute;
-                left : 50%;
+                left : 50%;*/
                 bottom: 50%;
                 z-index: 3;
                 width:500px;
@@ -21,6 +21,14 @@
                 
             }
         </style>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.box').css('background','blue');
+                $('.box').css('position','absolute');
+                $('.box').css('left','50%');
+            });
+        </script>
     </head>
     <body>
        <div class="box"></div>
