@@ -3,17 +3,17 @@
     <head>
         <script>
             window.onload=function(){
-                var string = '<h1>hello</h1>';
-                //document.body.textContent=string;
-                document.body.innerHTML=string;
-                
+                var img = document.querySelector('img');
+                img.setAttribute('src','http://placehold.it/430x280');    
+                img.setAttribute('height','280');
+                img.setAttribute('width','430');         
+                var alarm = img.getAttribute('width');
+                alert(alarm);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
             };
         </script>
 
     </head>
     <body>
-        <h1>header</h1>
-        <h1>header</h1>
-        <h1>header</h1>
+        <img >
     </body>
-</html>
+</html>                                       
