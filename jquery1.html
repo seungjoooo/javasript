@@ -5,7 +5,7 @@
             #click{
                 width: 100px;
                 height:100px;
-                background-color: blue;
+              
             }
         </style>
         
@@ -14,14 +14,14 @@
             $(document).ready(function(){
                 
                 $('#click').hover(function(){
-                    $('#click').css({
+                    $(this).css({
                         background:'red',
                         borderRadius : '50px'
 
                     })
                 },function(){
-                    $('#click').css({
-                        background: 'blue',
+                    $(this).css({
+                        background: '',
                         borderRadius : '50px'
 
                     })
