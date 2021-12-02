@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            #box{
+                background: red;
+                width: 100px;
+                height: 100px;
+            }
+            #box.hover{
+                background-color: blue;
+                border-radius: 50px;
+            }
+        </style>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script>
             $(document).ready(function(){
-               $('#box').css('width','100px').css('height','100px').css('border-radius','50px').css('background','red');
+               //$('#box').css('width','100px').css('height','100px').css('background','red');
                
                $('#box').hover(function(){
-                    $('#box').css('background','blue');
+                  //  $('#box').css('background','blue');
+                  $('#box').addClass('hover');
                },function(){
-                    $('#box').css('background','red');
+                   // $('#box').css('background','red');
+                   $('#box').removeClass('hover');
 
                });
 
