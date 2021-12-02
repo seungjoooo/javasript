@@ -13,12 +13,19 @@
         <script>
             $(document).ready(function(){
                 
-                $('#click').text('CLICK').mouseenter(function(){
-                    $('#click').css('background','red');
-                }).mouseleave(function(){
-                    $('#click').css('background','blue');
+                $('#click').hover(function(){
+                    $('#click').css({
+                        background:'red',
+                        borderRadius : '50px'
+
+                    })
+                },function(){
+                    $('#click').css({
+                        background: 'blue',
+                        borderRadius : '50px'
+
+                    })
                 })
-                
 
             });
             
