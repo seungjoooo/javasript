@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            #click{
+                width: 100px;
+                height:100px;
+                background-color: blue;
+            }
+        </style>
         
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script>
             $(document).ready(function(){
                 
-                $('#click').text('CLICK').click(function(){
-                    alert('click');
-                });
+                $('#click').text('CLICK').mouseenter(function(){
+                    $('#click').css('background','red');
+                }).mouseleave(function(){
+                    $('#click').css('background','blue');
+                })
                 
 
             });
