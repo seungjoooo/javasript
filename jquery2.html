@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #click{
+                width: 100px;
+                height:50px;
+                border-radius: 5px;
+                line-height: 50px;
+                text-align: center;
+                color:white;
+                background-color: teal;
+                
+              
+            }
+        </style>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                $('#click').hover(function(){
+                    $(this).css({
+                        opacity:0.5
+                    })
+                },function(){
+                    $(this).css({
+                        opacity:1
+                    })
+                })
+            });
+            
+            
+        </script>
+
+    </head>
+    <body>
+        <div id="click"></div>
+    </body>
+</html>            
